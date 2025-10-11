@@ -59,9 +59,9 @@
 
 #### 在终端下：
 1. 使用GCC编译器编译源代码：
-   gcc main.c addresslist.c -o addresslist.exe
+   gcc main.c addresslist.c -o addresslist
 2. 运行生成的可执行文件：
-   addresslist.exe
+   ./addresslist
 
 ### 使用说明
 
@@ -73,5 +73,6 @@
 4. **修改联系人**：输入要修改的联系人姓名，然后输入新的姓名和电话号码
 5. **查找联系人**：输入要查找的联系人姓名
 6. **退出系统**：结束程序运行
+
 
 请按照界面提示进行操作，系统会提供相应的反馈信息。

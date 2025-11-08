@@ -50,6 +50,8 @@ bool addContact(AddressList* list, const char* name, const char* phone) {
     ContactNode* node = createNode(name, phone);
     if (!node) return false;
 
+    //static 关键字：让 tail 只初始化一次（第一次调用函数时），后续调用会保留上一次的指向（不会重置为 NULL）。
+    //tail 作用：永久记住链表的「最后一个节点」，相当于给链表尾部做了个「书签」。
     //利用尾指针（tail） 来避免每次添加联系人时都从头遍历链表，从而提高性能。
     static ContactNode* tail = NULL;
     if (list->head == NULL) {

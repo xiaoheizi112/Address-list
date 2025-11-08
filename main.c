@@ -34,6 +34,8 @@ int main() {
                     //stdin 是一个标准输入流（standard input stream）的文件指针，
                     //定义在 <stdio.h> 头文件中，用于表示程序的标准输入设备，通常是键盘。
                     fgets(name, sizeof(name), stdin);
+                    //strcspn(name, "\n")：这个函数会计算字符串 name 中从开头到第一个换行符 '\n' 出现位置的字符数
+                    //返回值是换行符前面的字符个数（不包括换行符）
                     name[strcspn(name, "\n")] = '\0';  // 去除换行符
 
                     printf("请输入联系人电话(数字): ");
